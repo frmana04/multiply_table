@@ -1,15 +1,15 @@
 import fs from 'fs';
 
-let crearArchivo=(base,desde,hasta)=>{
+let crearArchivo=(number,from,to)=>{
 
 return new Promise((resolve)=>{
     let data='';
-    for (let i=desde;i<=hasta;i++)
-    data+=`${base} x ${i} = ${base*i}\n`;
+    for (let i=from;i<=to;i++)
+    data+=`${number} x ${i} = ${number*i}\n`;
 
-    fs.writeFile(`tablas/tabla-${base}.txt`,data,(err)=>{
+    fs.writeFile(`tablas/tabla-${number}.txt`,data,(err)=>{
         if (err) console.log(err)
-        resolve(`tabla-${base}.txt`)
+        resolve(`tabla-${number}.txt`)
 
     })
 

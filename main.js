@@ -4,8 +4,8 @@ import {argv} from 'yargs'
 
 
 
-crearArchivo(argv.base,argv.desde,argv.hasta).then(data=>{
-    console.log(`Archivo ${data} creado`)
+crearArchivo(argv.number,argv.from,argv.to).then(data=>{
+    console.log(`File ${data} created`)
 }).catch(err=>{
     console.log(err)
 })
