@@ -5,8 +5,9 @@ From command propmt execute node app with 3 parameters: number, from, to
 
 Example
 
+```
 node app --number=14 --from=30 --to=82
-
+```
 and the app will create an external txt file with the next content ( multiply table of 14, from 30 to 41 )
 
 14 x 30 = 420
